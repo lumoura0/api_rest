@@ -1,7 +1,6 @@
 import 'dotenv/config'
 import { z } from 'zod'
 
-// process.env.DATABASE_URL
 const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'production', 'test']).default('production'),
   DATABASE_URL: z.string(),
